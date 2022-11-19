@@ -20,8 +20,7 @@ public class Bill {
     public void printBill(){
         System.out.println("Добавленные товары:");
 
-        for(int i = 0; i < this.products.size(); i++){
-            Product product = this.products.get(i);
+        for(Product product : products){
             System.out.printf("\"%s\", стоимость %s\n", product.getName(), Money.getRurPrice(product.getPrice()));
         }
 
