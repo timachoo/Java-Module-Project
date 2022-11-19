@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class Product {
     private static final Scanner scanner = new Scanner(System.in);
-    private String name;
-    private double price = 0;
+    private final String name;
+    private final double price;
 
     Product(String name, double price){
         this.name = name;
