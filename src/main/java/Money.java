@@ -2,12 +2,12 @@ public class Money {
     public static String getRurPrice(double price){
 
         String result;
-        int x = (int)Math.floor(price);
+        int roundedPrice = (int)Math.floor(price);
 
-        if (x%100 >= 11 && x%100 <= 14){
+        if (roundedPrice%100 >= 11 && roundedPrice%100 <= 14){
             result = String.format("%.2f рублей", price);
         } else {
-            switch (x%10) {
+            switch (roundedPrice%10) {
                 case 1:
                     result = String.format("%.2f рубль", price);
                     break;
