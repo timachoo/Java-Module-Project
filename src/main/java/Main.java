@@ -59,7 +59,7 @@ public class Main {
         while (!finishFlag) {
             bill.addProduct();
 
-            System.out.println("Добавить еще один продукт? Для завершения введите \"" + Messages.finishPhrase + "\"");
+            System.out.println("Добавить еще один продукт? Для завершения введите \"" + Messages.FINISH_PHRASE + "\"");
             inputText = scanner.nextLine();
 
             if (Messages.Bye(inputText)) {
